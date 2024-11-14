@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            height:auto;
+            width: 1430px;
+            background-color: black;
+            display: flex;
+            gap: 30px;
+            
+        }
+        .team1{
+            height:780px;
+            width: 750px;
+            background-color: black;
+            /* border: 2px solid red; */
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .team1 > .c1{
+           height: 150px;
+           width: 750px;
+           /* border: 2px solid palegoldenrod; */
+           color: white;
+           display: flex;
+           justify-content: center;
+           align-items: end;
+           flex-direction: row;
+           gap: 10px;
+        }
+        .f1{
+            height: 50px;
+            width: 610px;
+            /* border: 2px solid red; */
+            font-size: xx-large;
+            letter-spacing: 1px;
+            
+        }
+        .f2{
+            height: 50px;
+            width: 50px;
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: center;
+            color: red;
+        }
+       .f2 > .fa-solid{
+        color: red;
+        font-size: 30px;
+       }
+       .team1 > .c2{
+           height: 150px;
+           width: 700px;
+           /* border: 2px solid palegoldenrod; */
+           color: white;
+           display: flex;
+           justify-content: end;
+           align-items: end;
+           flex-direction: column;
+           gap: 10px;
+        }
+       .f3{
+            height: 40px;
+            width: 750px;
+            /* border: 2px solid red; */
+            font-size: x-large;
+            letter-spacing: 1px;
+            color: red;
+        }
+        .f4{
+            height: 50px;
+            width:600px;
+            /* border: 2px solid red; */
+        }
+        .team1 > .c3{
+           height: 150px;
+           width: 700px;
+           /* border: 2px solid palegoldenrod; */
+           color: white;
+           display: flex;
+           justify-content: end;
+           align-items: end;
+           flex-direction: column;
+           gap: 10px;
+        }
+        .f5{
+            height: 40px;
+            width: 750px;
+            /* border: 2px solid red; */
+            font-size: x-large;
+            letter-spacing: 1px;
+            color: red;
+        }
+        .f6{
+            height: 50px;
+            width:600px;
+            /* border: 2px solid red; */
+            
+        }
+        .team1 > .c4{
+           height: 150px;
+           width: 700px;
+           /* border: 2px solid palegoldenrod; */
+           color: white;
+           display: flex;
+           justify-content: end;
+           align-items: end;
+           flex-direction: column;
+           gap: 10px;
+        }
+        .f7{
+            height: 40px;
+            width: 750px;
+            /* border: 2px solid red; */
+            font-size: x-large;
+            letter-spacing: 1px;
+            color: red;
+        }
+        .f8{
+            height: 50px;
+            width:600px;
+            /* border: 2px solid red; */
+            
+        }
+        .team2{
+            height:780px;
+            width: 750px;
+            background-color: aqua;
+            /* border: 2px solid purple; */
+            position: relative;
+            background-image: url(../servicerightimg\ \(1\).jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+        
+        .i1{
+            height: 50px;
+            width: 50px;
+            border: 2px solid black;
+            border-radius: 520px;
+            margin-top: 230px;
+            margin-left: -25px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            z-index: 9;
+        }
+        .i1>.fa-solid{
+            color: red;
+            font-size: 25px;
+        }
+        .i2{
+           
+            height: 50px;
+            width: 50px;
+            margin-top: 405px;
+            margin-left: -25px;
+            border: 2px solid black;
+            border-radius: 50px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            z-index: 9;
+        }
+        .i2>.fa-solid{
+            color: red;
+            font-size: 25px;
+        }
+        .i3{
+            height: 50px;
+            width: 50px;
+            margin-top: 570px;
+            margin-left: -25px;
+            border: 2px solid black;
+            border-radius: 50px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            z-index: 9;
+        }
+        .i3>.fa-solid{
+            color: red;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="team1">
+        <div class="c1">
+            <div class="f1" align="right">OUR SERVICES</div>
+            <div class="f2"><i class="fa-solid fa-grip-lines-vertical"></i></div>
+        </div>
+        <div class="c2">
+            <div class="f3" align="right">WEB DESIGN</div>
+            <div class="f4" align="right">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor natus adipisicing elit. Dolor natus Dolor natus adipisicing elit.</div>
+        </div>
+        <div class="c3">
+            <div class="f5" align="right">PRINT DESIGN</div>
+            <div class="f6" align="right">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor natus adipisicing elit. Dolor natus Dolor natus adipisicing elit.</div>
+        </div>
+        <div class="c4">
+            <div class="f7" align="right">PHOTOGRAPHY</div>
+            <div class="f8" align="right">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor natus adipisicing elit. Dolor natus Dolor natus adipisicing elit.</div>
+        </div>
+    </div>
+    <div class="team2">
+        <div class="i1"><i class="fa-solid fa-tv"></i></div>
+        <div class="i2"><i class="fa-solid fa-print"></i></div>
+        <div class="i3"><i class="fa-solid fa-camera"></i></div>
+    </div>
+</div>
+</body>
+</html>

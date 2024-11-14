@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .box {
+        height: 600px;
+        width: auto;
+        background-color: black;
+        /* border: 2px solid green; */
+        background-image: url(https://c4.wallpaperflare.com/wallpaper/415/941/234/earth-scenic-blue-fog-wallpaper-preview.jpg);
+        /* background-position: center; */
+        background-repeat: no-repeat;
+        background-size: cover;
+        clip-path: polygon(100% 0%, 100% 38%, 50% 56%, 51% 56%, 0 39%, 0 0);
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .b1 {
+        height: 90px;
+        width: 500px;
+        /* border: 2px solid red; */
+    }
+
+    .b1>.c1 {
+        height: 30px;
+        width: 500px;
+        /* border: 2px solid brown; */
+    }
+
+    .c1 {
+        font-size: 20px;
+        color: white;
+    }
+
+    .b1>.c2 {
+        height: 60px;
+        width: 500px;
+        /* border: 2px solid blue; */
+    }
+
+    .c2 {
+        font-size: 70px;
+        color: white;
+    }
+
+    .b2 {
+        height: 50px;
+        width: 400px;
+        /* border: 2px solid yellow; */
+        color: white;
+    }
+
+    .b3 {
+        height: 60px;
+        width: 300px;
+        /* border: 2px solid green; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .b3>.btn-1 {
+        height: 40px;
+        width: 170px;
+        border: none;
+        border: 1px solid white;
+        color: white;
+        font-size: x-small;
+        background-color: tomato;
+    }
+
+    .b3>.btn-2 {
+        height: 40px;
+        width: 170px;
+        border: none;
+        border: 1px solid white;
+        color: white;
+        font-size: x-small;
+        background-color: black;
+    }
+    .b4{
+        height: 30px;
+        width: 30px;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 50px;
+        margin-left: 465px;
+        margin-top: -285px;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* display: flex; */
+    }
+    .b4>.fa-solid  {
+        color: red;
+        font-size: 20px;
+    }
+    .box1{
+        height: auto;
+        width: auto;
+        /* border: 2px solid red; */
+        background-color: white;
+        margin-top: -267px;
+       
+    }
+    .doc{
+        height: 177px;
+        width: 940px;
+        /* border: 2px solid yellow; */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        /* gap: 50px; */
+    }
+    .doc>.d1,.d2,.d3,.d4{
+        height: 160px;
+        width: 200px;
+        /* border: 2px solid green; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .d1 > .e1{
+     height: 40px;
+     width: 40px;
+     border: 1px solid tomato;
+     background-color: white;
+     display: flex;
+     rotate: 45deg;
+     justify-content: center;
+     align-items: center;
+    }
+    .e1>.fa-solid{
+        color: red;
+        rotate: 135deg;
+    }
+    .d1 > .e2{
+     height: 20px;
+     width: 90px;
+     color: red;
+     /* border: 2px solid red; */
+    }
+    .d1 > .e3{
+     height: 50px;
+     width: 160px;
+     /* border: 2px solid red; */
+    }
+    .e3{
+        font-size: 14px;
+    }
+    .d2 > .e1{
+     height: 40px;
+     width: 40px;
+     border: 1px solid tomato;
+     background-color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    }
+    .e1>.fa-regular{
+        color: red;
+    }
+    .d2 > .e2{
+     height: 20px;
+     width: 90px;
+     /* border: 2px solid red; */
+    }
+    .d2 > .e3{
+     height: 50px;
+     width: 160px;
+     /* border: 2px solid red; */
+    }
+    .e3{
+        font-size: 14px;
+    }
+    .d3 > .e1{
+     height: 40px;
+     width: 40px;
+     border: 1px solid tomato;
+     background-color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    }
+    .e1>.fa-regular{
+        color: red;
+    }
+    .d3 > .e2{
+     height: 20px;
+     width: 100px;
+     /* border: 2px solid red; */
+    }
+    .d3> .e3{
+     height: 50px;
+     width: 160px;
+     /* border: 2px solid red; */
+    }
+    .e3{
+        font-size: 14px;
+    }
+    .d4 > .e1{
+     height: 40px;
+     width: 40px;
+     border: 1px solid tomato;
+     background-color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    }
+    .e1>.fa-regular{
+        color: red;
+    }
+    .d4> .e2{
+     height: 20px;
+     width: 90px;
+     /* border: 2px solid red; */
+    }
+    .d4> .e3{
+     height: 50px;
+     width: 160px;
+     /* border: 2px solid red; */
+    }
+    .e3{
+        font-size: 14px;
+    }
+</style>
+
+<body>
+    <div class="box">
+        <div class="b1">
+            <div class="c1" align="center">Our clients are our first priority.</div>
+            <div class="c2"> Welcome To Sky</div>
+        </div>
+        <div class="b2">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing chthth jtjtjj rtyrtryy wzkonxex elit. Commodi ut id
+                voluptates, incidunt minus nihil,vxg ad iusto aliquid si fikjn excepturi.</p>
+        </div>
+        <div class="b3">
+            <button class="btn-1" >GET STARTED NOW</button>
+            <button class="btn-2" >LEARN MORE</button>
+        </div>
+    </div>
+    <div class="b4"><i class="fa-solid fa-arrow-down fa-bounce"></i></div>
+    <div class="box1">
+        <div class="doc">
+        <div class="d1">
+            <div class="e1"><i class="fa-solid fa-infinity"></i></div>
+            <div class="e2">Sleek Design</div>
+            <div class="e3"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, quisquam?</p></div>
+        </div>
+        <div class="d2">
+            <div class="e1"><i class="fa-regular fa-heart"></i></div>
+            <div class="e2">Clean Code</div>
+            <div class="e3"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, quisquam?</p></div>
+        </div>
+        <div class="d3">
+            <div class="e1"><i class="fa-regular fa-lightbulb"></i></div>
+            <div class="e2">Creative Ideas</div>
+            <div class="e3"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, quisquam?</p></div>
+        </div>
+        <div class="d4">
+            <div class="e1"><i class="fa-regular fa-comments"></i></div>
+            <div class="e2">Free Support</div>
+            <div class="e3"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, quisquam?</p></div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

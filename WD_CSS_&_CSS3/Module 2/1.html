@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: white;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        .main {
+            display: flex;
+            width: 100%;
+
+        }
+
+        .sub {
+            text-align: right;
+            margin-top: 10px;
+            width: 200px;
+        
+        }
+
+        .sub h5,
+        .sub h3 {
+            padding: 10px;
+        }
+
+        .grid-path {
+            width: 90%;
+            height: 620px;
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto;
+            text-align: center;
+            font-size: 50px;
+            gap: 10px;
+
+
+        }
+
+
+
+        .grid-1 {
+            grid-column: 1 / span 4;
+            grid-row: 1;
+            background: url(https://cdn.pixabay.com/photo/2017/04/08/10/23/surfing-2212948_1280.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .grid-2 {
+
+            grid-column: 5/span 2;
+            background: url(https://media.istockphoto.com/id/178137130/photo/silhouette-of-man.jpg?s=612x612&w=0&k=20&c=NCtOM2XmL4AeWVFjqxaxk3_USy1tBx7xcG8EXvGI5jw=);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .grid-3 {
+            grid-column: 1/span;
+            background: url(https://image.tmdb.org/t/p/original/17A6a2ZJQWXbMTPfhpTNBQhtDv7.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .grid-4 {
+            grid-column: 2/span 4;
+            background: url(https://cdn.pixabay.com/photo/2016/12/27/21/03/lone-tree-1934897_640.jpg);
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        .grid-5 {
+            background: url(https://img.freepik.com/premium-photo/shot-two-young-woman-taking-selfie-together-outside_762026-52571.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .grid-6 {
+            grid-column: 1/span 3;
+            background: url(https://t3.ftcdn.net/jpg/05/79/01/24/360_F_579012421_6LCfmXYZs48lZTtEvmChn1hq3XuhILl7.jpg);
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        .grid-7 {
+            grid-column: 4 /span 3;
+            background: url(https://img.freepik.com/premium-photo/indian-village-girl-wearing-saree_431718-6087.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .grid-8 {
+            grid-column: 1 /span 2;
+            background: url(https://plus.unsplash.com/premium_photo-1672423154405-5fd922c11af2?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y29ycG9yYXRlJTIwYnVpbGRpbmd8ZW58MHx8MHx8fDA%3D);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .grid-9 {
+            grid-column: 3/span 2;
+            background: url(https://images.pexels.com/photos/548084/pexels-photo-548084.jpeg?cs=srgb&dl=pexels-margerretta-548084.jpg&fm=jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .grid-10 {
+            grid-column: 5/span 2;
+            background: url(https://wallpapercat.com/w/full/7/a/d/17150-1920x1080-desktop-full-hd-ocean-wallpaper-photo.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        h5:hover {
+            color: #FF8000;
+        }
+
+        .logo {
+            display: inline;
+            
+            
+        }
+        .logo i{
+            margin: 10px;
+        }
+    </style>
+
+</head>
+
+    
+
+
+<body>
+    <div class="main">
+
+        <div class="grid-path">
+            <div class="grid-1 grid"></div>
+            <div class="grid-2 grid"></div>
+            <div class="grid-3 grid"></div>
+            <div class="grid-4 grid"></div>
+            <div class="grid-5 grid"></div>
+            <div class="grid-6 grid "></div>
+            <div class="grid-7 grid"></div>
+            <div class="grid-8 grid"></div>
+            <div class="grid-9 grid"></div>
+            <div class="grid-10 grid"></div>
+        </div>
+        <div class="sub">
+            <div>
+                <h3>SHUTTER</h3>
+            </div>
+            <div>
+                <h5>HOME</h5>
+            </div>
+            <div>
+                <h5>PHOTOS</h5>
+            </div>
+            <div>
+                <h5>BIO</h5>
+            </div>
+            <div>
+                <h5>BLOG</h5>
+            </div>
+            <div>
+                <h5>CONTACT</h5>
+            </div>
+            <div class="logo"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></div>
+            <div class="logo"><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></div>
+            <div class="logo"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></div>
+        </div>
+    </div>
+</body>
+</html>
